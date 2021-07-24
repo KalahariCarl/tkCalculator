@@ -39,7 +39,7 @@ def mem():
         mem_made = 1
     else:
         click(memory)
-        key_m.config(text="M+")
+        key_m.config(text="M")
         memory = ""
         mem_made = False
 
@@ -93,7 +93,7 @@ output.grid(column=1, row=1, sticky='ew', columnspan=4)
 
 # KEYS
 key_m = tkinter.Button(
-    text="M+",
+    text="M",
     bg=L5_COLOUR,
     fg="white",
     activebackground=L3_COLOUR,
@@ -375,7 +375,7 @@ key_equal.grid(column=4, row=6, sticky="NSEW")
 credit = tkinter.Label(text="created by Carel van der Merwe", bg=L1_COLOUR, fg='white', font=INFO_FONT)
 credit.grid(column=1, row=7, columnspan=3, sticky='w')
 copyright_label = tkinter.Label(text="@kalaharicarl ©2021", bg=L1_COLOUR, fg='white', font=INFO_FONT)
-copyright_label.grid(column=3, row=7, columnspan=2, sticky='e')
+# copyright_label.grid(column=3, row=7, columnspan=2, sticky='e')
 
 clear()
 
