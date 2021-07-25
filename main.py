@@ -106,8 +106,8 @@ key_m = tkinter.Button(
     command=lambda: mem())
 key_m.grid(column=1, row=2, sticky="NSEW")
 
-key_c = tkinter.Button(
-    text="C",
+key_bracket_left = tkinter.Button(
+    text="(",
     bg=L5_COLOUR,
     fg="white",
     activebackground=L3_COLOUR,
@@ -117,11 +117,11 @@ key_c = tkinter.Button(
     pady=5,
     width=10, height=2,
     font=OPERATOR_FONT,
-    command=lambda: clear())
-key_c.grid(column=2, row=2, sticky="NSEW")
+    command=lambda: click("("))
+key_bracket_left.grid(column=2, row=2, sticky="NSEW")
 
-key_percentage = tkinter.Button(
-    text="%",
+key_bracket_right = tkinter.Button(
+    text=")",
     bg=L5_COLOUR,
     fg="white",
     activebackground=L3_COLOUR,
@@ -131,8 +131,8 @@ key_percentage = tkinter.Button(
     pady=5,
     width=10, height=2,
     font=OPERATOR_FONT,
-    command=click("%"))
-key_percentage.grid(column=3, row=2, sticky="NSEW")
+    command=lambda: click(")"))
+key_bracket_right.grid(column=3, row=2, sticky="NSEW")
 
 key_div = tkinter.Button(
     text="➗",
@@ -316,8 +316,8 @@ key_subtract = tkinter.Button(
     command=lambda: click("-"))
 key_subtract.grid(column=4, row=5, sticky="NSEW")
 
-key_plusminus = tkinter.Button(
-    text="+-",
+key_ac = tkinter.Button(
+    text="AC",
     bg=L2_COLOUR,
     fg="white",
     activebackground=L3_COLOUR,
@@ -327,8 +327,8 @@ key_plusminus = tkinter.Button(
     pady=5,
     width=10, height=2,
     font=BUTTON_FONT,
-    command=posOrMin())
-key_plusminus.grid(column=1, row=6, sticky="NSEW")
+    command=lambda: clear())
+key_ac.grid(column=1, row=6, sticky="NSEW")
 
 key_0 = tkinter.Button(
     text="0",
