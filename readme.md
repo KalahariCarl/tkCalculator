@@ -1,10 +1,14 @@
 ** Simple Python Tkinter Calculator **
 
+Updates:
+* Replaced some keys 
+  * (%, C, and +- with brackets and AC)
+    
 
 Known Bugs:
-* Fixed: Starts with %
-* Percentage not working yet
-* Plus/Minus not working yet
+* Bracket issue:
+  * Eg.: 2(2) gives error
+  * Need to use 2*(2) to work  
 * Lots of unused code
 * Possibly more bugs
 
