@@ -1,5 +1,7 @@
 ** Simple Python Tkinter Calculator **
 
+Just a quick calculator app!
+
 Updates:
 * Replaced some keys 
   * (%, C, and +- with brackets and AC)
